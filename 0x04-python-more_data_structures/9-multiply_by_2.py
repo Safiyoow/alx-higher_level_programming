@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-def simple_delete(a_dictionary, key=""):
-    if key in a_dictionary:
-        del a_dictionary[key]
-    return (a_dictionary)
+def multiply_by_2(a_dictionary):
+    temp = dict(a_dictionary)
+    for key, value in temp.items():
+        temp[key] = value * 2
+    return temp
