@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-class LockedClass:
-    __slots__ = ['first_name']
+"""Locked Class module"""
 
-    def __init__(self, first_name=''):
-        self.first_name = first_name
+
+class LockedClass:
+    """class with only one attribute"""
+    __slots__ = ("first_name",)
