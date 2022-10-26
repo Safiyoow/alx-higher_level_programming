@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-"""
-Module: 6-base_geometry
-Public instance method: def area(self): that raises an Exception with the message area() is not implemented
+""" Module base geometry
 """
 
 
 class BaseGeometry:
-    """
-    It raises an Exception with the message area() is not implemented
-    """
-
+    """ empty class"""
     def area(self):
-        raise Exception("area() is not implemented")
+        raise Exception('area() is not implemented')
