@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-"""Module: 0-read_file
-This is a function that reads a text file (UTF8) and prints it to stdout
+""" Module that contains a function that writes to a text file
 """
-def read_file(filename=""):
-    """Reads a text file (UTF8) and prints it to stdout
-    Args:
-        - filename: this is the file to be read
-    """   
 
-    with open(filename) as f:
-        read_data = f.read()
-        print(read_data, end="")
+
+def write_file(filename="", text=""):
+    """ Function that writes to a text file
+    Args:
+        filename: filename
+        text: text to write
+    Raises
+        Exception: when the file can be opened
+    """
+
+    with open(filename, 'w', encoding="utf-8") as f:
+        return f.write(text)
